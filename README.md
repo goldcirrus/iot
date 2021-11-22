@@ -12,7 +12,7 @@ $(document).ready(function(){
   
   $(document).ready(function(){
   $("p").click(function(){
-    $(this).hide();
+    $(this).append("some text appended");
   });
 });
 </script>
@@ -24,7 +24,7 @@ $(document).ready(function(){
   
 <body>
   <button >but</button>
-   <p id="a">tddde </p>
+   <p id="a">inialial </p>
   
   <script type="module">
    //Copy and paste these scripts into the bottom of your <body> tag, but before you use any Firebase services:
