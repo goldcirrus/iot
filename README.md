@@ -13,7 +13,7 @@ $(document).ready(function(){
   
   
 <body>
-   <p id="a">test text </p>
+   <p id="a">test </p>
   
   <script type="module">
    //Copy and paste these scripts into the bottom of your <body> tag, but before you use any Firebase services:
