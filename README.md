@@ -10,11 +10,7 @@ $(document).ready(function(){
 });
   
   
-  $(document).ready(function(){
-  $("p").click(function(){
-    $(this).append("some text appended");
-  });
-});
+  
 </script>
   
   
@@ -51,6 +47,14 @@ $(document).ready(function(){
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
+    
+    $(document).ready(function(){
+  $("p").click(function(){
+    $(this).append("some text appended+");
+    $(this).append(analytics);
+  });
+});
+    
 </script>
     
    
