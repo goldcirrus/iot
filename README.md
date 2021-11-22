@@ -21,7 +21,7 @@ $(document).ready(function(){
   
 <body>
   <button >but</button>
-   <p id="a">test </p>
+   <p id="a">te </p>
   
   <script type="module">
    //Copy and paste these scripts into the bottom of your <body> tag, but before you use any Firebase services:
