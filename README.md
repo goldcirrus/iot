@@ -9,11 +9,18 @@ $(document).ready(function(){
   });
 });
 </script>
+  
+  $(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+  
 </head>  
   
   
 <body>
-  <button>but</button>
+  <button >but</button>
    <p id="a">test </p>
   
   <script type="module">
