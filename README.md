@@ -8,20 +8,23 @@ $(document).ready(function(){
     $(this).alert("test");
   });
 });
-</script>
+  
   
   $(document).ready(function(){
   $("p").click(function(){
     $(this).hide();
   });
 });
+</script>
+  
+  
   
 </head>  
   
   
 <body>
   <button >but</button>
-   <p id="a">te </p>
+   <p id="a">tddde </p>
   
   <script type="module">
    //Copy and paste these scripts into the bottom of your <body> tag, but before you use any Firebase services:
