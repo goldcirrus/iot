@@ -4,7 +4,7 @@
   
 <script>
 $(document).ready(function(){
-  $("p").click(function(){
+  $("button").click(function(){
     $(this).alert("test");
   });
 });
@@ -13,6 +13,7 @@ $(document).ready(function(){
   
   
 <body>
+  <button>but</button>
    <p id="a">test </p>
   
   <script type="module">
