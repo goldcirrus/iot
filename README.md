@@ -1,5 +1,19 @@
 <html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).alert("test");
+  });
+});
+</script>
+</head>  
+  
+  
 <body>
+   <p id="a">test text </p>
   
   <script type="module">
    //Copy and paste these scripts into the bottom of your <body> tag, but before you use any Firebase services:
@@ -28,7 +42,7 @@
   const analytics = getAnalytics(app);
 </script>
     
-    <p id="a">test text </p>
+   
 
   </body>
   </html>
