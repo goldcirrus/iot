@@ -34,7 +34,7 @@
   var dbRef = firebase.database().ref().child('test');
   dbRef.on('value', snap=>document.getElementById('a').innerHTML=snap.val());
   
-  var starRef = firebase.database().ref('dht');
+  var starRef = firebase.database().ref('test');
   starRef.on('value', (snapshot)=>{
                           var data = snapshot.val();
                           document.getElementById('b').textContent = data;
