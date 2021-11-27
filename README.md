@@ -3,9 +3,9 @@
   
 </head>  
   
-  <body>
+<body>
 
-<p id="test">This is some <b>bold</b> text in a paragraph.</p>
+
 <p id="a">paragraph 2</p>
 
 
@@ -44,6 +44,5 @@
   </body>
   </html>
 
-llll
-Welcome to GitHub Pages
+
 
