@@ -29,7 +29,7 @@
 
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  var dbRef = firebase.database().ref().child('sensor').child( );
+  var dbRef = firebase.database().ref().child('test');
   dbRef.on('value', snap=>document.getElementById('a').innerHTML=snap.val());
   
   </script>
