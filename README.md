@@ -5,16 +5,17 @@
   
 <body>
 
-  <p>temperature is: </p>
-<p id="d">display 1</p>
-  <p>humidity is: </p>
-<p id="e">display 2</p>
+<p>temperature is: </p>
+<p id="d"></p>
+<p>humidity is: </p>
+<p id="e"></p>
 
 
 
 
 <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+  
 <script>
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -36,40 +37,16 @@
   var dhtRef = firebase.database().ref().child('sensor');
 
                //listen child_added
-        dhtRef.on('child_added', (data) => {
-               addCommentElement(data.key, data.val());
+  dhtRef.on('child_added', (data) => {
+               addElement(data.key, data.val());
         });
 
-        function addCommentElement(x,y){
-              //document.querySelector('#c').innerHTML= x;  //get -MpV-qq8lMrVfr24BypR key
-              document.querySelector('#d').innerHTML=y.temp;
-              document.querySelector('#e').innerHTML=y.humidity;
+        function addElement(key,dataObject){
+              document.querySelector('#d').innerHTML=dataObject.temp;
+              document.querySelector('#e').innerHTML=dataObject.humidity;
         }
   
-  
-  
-  
-  var dbRef = firebase.database().ref().child('test');
-  dbRef.on('value', snap=>document.getElementById('a').innerHTML=snap.val());
-  
-  var starRef = firebase.database().ref('test');
-  starRef.on('value', (snapshot)=>{
-                          var data = snapshot.val();
-                          document.getElementById('b').textContent = data;
-                        });
-  
-  
-  
   </script>
-
- 
-
-
-  
-
-
-    
-   
 
   </body>
   </html>
