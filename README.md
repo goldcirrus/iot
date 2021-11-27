@@ -5,9 +5,9 @@
   
 <body>
 
-  <p>humid is: </p>
+  <p>temperature is: </p>
 <p id="d">display 1</p>
-  <p>temp is: </p>
+  <p>humidity is: </p>
 <p id="e">display 2</p>
 
 
