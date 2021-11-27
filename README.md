@@ -37,8 +37,7 @@
   var starRef = firebase.database().ref('dht');
   starRef.on('value', (snapshot)=>{
                           var data = snapshot.val();
-                          const readoutput = document.querySelector('#b');
-                          readoutput.textContent = data;
+                          document.getElementById('b').textContent = data;
                         });
   
   
