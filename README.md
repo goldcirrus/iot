@@ -6,7 +6,8 @@
 <body>
 
 
-<p id="a">paragraph 2</p>
+<p id="a">display 1</p>
+  <p id="b">display 2</p>
 
 
 
@@ -29,8 +30,18 @@
 
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+  
   var dbRef = firebase.database().ref().child('test');
   dbRef.on('value', snap=>document.getElementById('a').innerHTML=snap.val());
+  
+  var starRef = firebase.database().ref('test');
+  starRef.on('value', (snapshot)=>{
+                          var data = snapshot.val();
+                          const readoutput = document.querySelector('#b');
+                          readoutput.textContent = data;
+                        });
+  
+  
   
   </script>
 
