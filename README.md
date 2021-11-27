@@ -5,9 +5,10 @@
   
 <body>
 
-
-<p id="a">display 1</p>
-  <p id="b">display 2</p>
+  <p>humid is: </p>
+<p id="d">display 1</p>
+  <p>temp is: </p>
+<p id="e">display 2</p>
 
 
 
@@ -30,6 +31,23 @@
 
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+  
+  
+  var dhtRef = firebase.database().ref().child('sensor');
+
+               //listen child_added
+        dhtRef.on('child_added', (data) => {
+               addCommentElement(data.key, data.val());
+        });
+
+        function addCommentElement(x,y){
+              //document.querySelector('#c').innerHTML= x;  //get -MpV-qq8lMrVfr24BypR key
+              document.querySelector('#d').innerHTML=y.temp;
+              document.querySelector('#e').innerHTML=y.humidity;
+        }
+  
+  
+  
   
   var dbRef = firebase.database().ref().child('test');
   dbRef.on('value', snap=>document.getElementById('a').innerHTML=snap.val());
