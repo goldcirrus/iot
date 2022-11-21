@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#must connect pi to the internet via ethnet or wifi
+#must connect pi to the internet via ethernet or wifi
 
 import RPi.GPIO as GPIO
 import time
